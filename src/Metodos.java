@@ -35,7 +35,15 @@ public class Metodos {
         if (validarDimensiones(filas, cols)) {
             int[][] matriz = crearMatriz(filas, cols);
             System.out.println("Matriz creada correctamente:");
-            llenarMatriz(matriz);
+
+            System.out.print("Ingrese 1 para llenar la matriz: ");
+            int llenar = scanner.nextInt();
+            if (llenar == 1){
+                llenarMatriz(matriz);}
+            else {
+                System.out.println("Su matriz quedará vacía");
+            }
+
             imprimirMatriz(matriz);
         } else {
             System.out.println("Dimensiones no válidas. Deben ser números enteros positivos.");
