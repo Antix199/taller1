@@ -29,7 +29,7 @@ public class Metodos {
         System.out.print("Ingrese el número de filas que desea crear: ");
         int filas = scanner.nextInt();
 
-        System.out.print("Ingrese el número de columnas que desea crar: ");
+        System.out.print("Ingrese el número de columnas que desea crear: ");
         int cols = scanner.nextInt();
 
         if (validarDimensiones(filas, cols)) {
